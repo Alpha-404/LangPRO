@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Langpro++</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        <script src="main.js" defer></script> 
+        <div id="holderdiv">
+            <div id="logindiv">
+                <h4 id="titleaccinfo">1. Account info</h4>
+                <input type="text" class="textbox" placeholder="username" id="username">
+                <input type="password" class="textbox" placeholder="password" id="password">
+                <button id="loginbutton" onclick="login()">LOGIN</button>
+            </div>
+            <div id="firediv">
+                <h4 id="titlelogin">4. Ready?</h4>
+                <button id="firebutton" onclick="hack()">HACK</button>
+            </div>
+            <div id="targetdiv">
+                <h4 id="titletarget">2. Account name</h4>
+                <h2 class="statusbox" id="statusbox" title="This field autofills upon logging in to your account name">None</h2>
+            </div>
+            <div id="cheatsdiv">
+                <h4 id="titlecheats">3. Cheats</h4>
+                <div>
+                    <input type="checkbox" id="genMedals">
+                    <label class="genericLabel" for="genMedals" onclick="cheatsConfig('medalsgen')"> Generate Medals</label><br>
+                    <div>
+                        <input type="text" id="medalAm" class="delay" placeholder="Medal amount" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="cataAns">
+                    <label class="genericLabel" for="cataAns" onclick="cheatsConfig('cataAns')"> Get answers from catalog id</label><br>
+                    <div>
+                        <input type="text" id="cataAnsTb" class="delay" placeholder="Catalog id" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="modAns">
+                    <label class="genericLabel" for="modAns" onclick="cheatsConfig('modAns')"> Get answers from module id</label><br>
+                    <div>
+                        <input type="text" id="modTB" class="delay" placeholder="Module id" style="display: none;">
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="downData">
+                    <label class="genericLabel" for="modAns" onclick="cheatsConfig('modAns')"> Download student data</label><br>
+                </div>
+                <div>
+                    <input type="checkbox" id="compHW">
+                    <label class="genericLabel" for="compHW"> Complete homework</label><br>
+                    <div>
+                        <input type="number" id="compHWtb" class="textbox" placeholder="0 (newest hw)" style="display: none;">
+                    </div>
+                </div>
+            </div>
+            <div id="statusdiv">
+                <h4 id="titlestatus">5. Output</h4>
+                <textarea class="terminal" id="terminal" readonly></textarea>
+            </div>
+        </div>
+    </body>
+</html>

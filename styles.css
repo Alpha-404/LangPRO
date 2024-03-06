@@ -1,0 +1,209 @@
+body {
+    background-color: #111;
+}
+#holderdiv {
+    overflow: hidden;
+    width: 600px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 5px 5px;
+    align-self: center;
+}
+#logindiv {
+    width: 320px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 10px 0px 0px 10px;
+    float:left
+}
+#firediv {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 10px 0px 10px 20px;
+    text-align: center;
+    float: left;
+}
+#targetdiv {
+    width: 513px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    float: left;
+}
+#cheatsdiv {
+    width: 513px;
+    height: 130px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    float: left;
+}
+#statusdiv {
+    width: 513px;
+    height: 110px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    margin: 10px 0px 10px 10px;
+    text-align: center;
+    float: left;
+}
+#titlestatus {
+    color: white;
+    background: #111;
+    font-family: monospace;
+    margin: -17px 0px 0px 0px;
+    width: 80px;
+}
+#titleaccinfo {
+    color: white;
+    background: #111;
+    font-family: monospace;
+    margin: -17px 0px 0px 0px;
+    width: 120px;
+}
+#titlelogin {
+    color: white;
+    background: #111;
+    font-family: monospace;
+    margin: -17px 0px 0px 0px;
+    width: 80px;
+}
+#titletarget {
+    color: white;
+    background: #111;
+    font-family: monospace;
+    margin: -17px 0px 0px 0px;
+    width: 120px;
+}
+#titlecheats {
+    color: white;
+    background: #111;
+    font-family: monospace;
+    margin: -17px 0px 0px 0px;
+    width: 80px;
+}
+#firebutton {
+    background-color: #222;
+    color: white;
+    font-family: monospace;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 0px 24px 0px 24px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    margin: 4px 0px;
+    transition: background-color 0.3s ease;
+}
+#firebutton:hover {
+    background-color: #333; /* New background color when hovering */
+}
+#loginbutton {
+    background-color: #222;
+    color: white;
+    font-family: monospace;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 12px 24px;
+    text-align: center;
+    position: fixed;
+    border-radius: 5px;
+    margin: -25px 6px;
+    transition: background-color 0.3s ease;
+}
+#loginbutton:hover {
+    background-color: #333; /* New background color when hovering */
+}
+.textbox {
+    padding: 0;
+    height: 25px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: #222;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.textbox:hover {
+    background-color: #333; /* New background color when hovering */
+}
+
+.statusbox {
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: #222;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: monospace;
+    vertical-align: middle;
+}
+.statusbox:hover {
+    background-color: #333; /* New background color when hovering */
+}
+
+.genericLabel {
+    color:white;
+    font-family: monospace;
+}
+
+.delay {
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0, 0, 0, .15);
+    background-color: #222;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: monospace;
+    vertical-align: middle;
+}
+.delay:hover {
+    background-color: #333; /* New background color when hovering */
+}
+textarea.terminal {
+    width: 400px;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #222;
+    color: #888;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    resize: none; /* Prevent resizing */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    margin: 3px 0px;
+}
