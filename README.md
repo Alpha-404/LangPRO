@@ -3,6 +3,8 @@
 
 ![langprodemo 2 mp4](https://github.com/Alpha-404/LangPRO/assets/63340001/540f4439-4be9-4c06-ba82-a74f1222c8c4)
 
+-- As of right now login is possibly broken on chrome, use firefox
+
 Languagenut cheat 🗣️🗣️🔥🔥
 Theoretically a hacked client for languagenut
 
