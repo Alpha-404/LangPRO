@@ -8,6 +8,8 @@
 
 -- Homework bot may be patched, will see if its just something on the client side but the teacher still sees it as complete
 
+-- Medals seem to still increase when using the homework bot, most probabistically still going to mark as complete on teachers end
+
 Languagenut cheat 🗣️🗣️🔥🔥
 
 Theoretically a hacked client for languagenut
