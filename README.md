@@ -4,6 +4,7 @@
 ![langprodemo 2 mp4](https://github.com/Alpha-404/LangPRO/assets/63340001/540f4439-4be9-4c06-ba82-a74f1222c8c4)
 
 -- As of right now login is possibly broken on chrome, use firefox
+-- Homework bot may be patched, will see if its just something on the client side but the teacher still sees it as complete
 
 Languagenut cheat 🗣️🗣️🔥🔥
 Theoretically a hacked client for languagenut
