@@ -10,6 +10,8 @@
 
 -- Medals seem to still increase when using the homework bot, most probabistically still going to mark as complete on teachers end
 
+-- I think my german teacher gave up on giving me homework so i cant work on the homework bot
+
 Languagenut cheat 🗣️🗣️🔥🔥
 
 Theoretically a hacked client for languagenut
