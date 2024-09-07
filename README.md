@@ -3,6 +3,8 @@
 
 ![langprodemo 2 mp4](https://github.com/Alpha-404/LangPRO/assets/63340001/540f4439-4be9-4c06-ba82-a74f1222c8c4)
 
+https://github.com/user-attachments/assets/b208576d-9639-423e-a30e-a91bd2d9428c
+
 -- As of right now login is possibly broken on chrome, use firefox
 
 
@@ -11,6 +13,8 @@
 -- Medals seem to still increase when using the homework bot, most probabistically still going to mark as complete on teachers end
 
 -- I think my german teacher gave up on giving me homework so i cant work on the homework bot
+
+-- generating medals now takes alot longer than it used to due to a change on languagenuts end (probably to patch this) it also doesent show up instantly
 
 Languagenut cheat 🗣️🗣️🔥🔥
 
