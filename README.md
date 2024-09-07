@@ -26,7 +26,7 @@ You may need a CORS bypass for some features
 
 | Features      |         Status      |
 | ------------- |:-------------:|
-| Answer sheat generation     | ✅ (Look in the url for its required fields, using it will log you out) |
+| Answer sheet generation     | ✅ (Look in the url for its required fields, using it will log you out) |
 | Homework bot      | 50/50 (so far only vocab trainer works)     |
 | Download student data | ✅    (Only downloads yours obv)   |
 | Medal Generation | ✅ |
