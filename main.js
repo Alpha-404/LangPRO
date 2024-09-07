@@ -72,7 +72,8 @@ function login() {
         log("Last 5 characters of token: " + user.token.slice(-5))
     })
     .catch(error => {
-        log('There was a problem with the fetch operation:', error);
+        //log('There was a problem with the fetch operation:', error);
+        console.error(error);
     });
 }
 
@@ -81,7 +82,8 @@ var checkboxes = {
     genMedals: document.getElementById("genMedals"),
     modAns: document.getElementById("modAns"),
     downData: document.getElementById("downData"),
-    compHW: document.getElementById("compHW")
+    compHW: document.getElementById("compHW"),
+    printCurMedals: document.getElementById("printCurMedals")
 }
 
 checkboxes.cataAns.addEventListener('change', function(event) {
@@ -184,7 +186,7 @@ function completeHW(data) {
             counter++;
         })
         .catch(error => {
-            log('There was a problem with the fetch operation:', error);
+            //log('There was a problem with the fetch operation:', error);
             console.error("error ", error)
         });
 
@@ -234,8 +236,8 @@ function hack() {
                 });
             })
             .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-                log('There was a problem with the fetch operation:', error);
+                console.error(error);
+                //log('There was a problem with the fetch operation:', error);
             });
         } else {
             alert("No catalog uid!, put one in")
@@ -308,13 +310,13 @@ function hack() {
                         });
                     })
                     .catch(error => {
-                        console.error('There was a problem with the fetch operation:', error);
-                        log('There was a problem with the fetch operation:', error);
+                        console.error(error);
+                        //log('There was a problem with the fetch operation:', error);
                     });
                 })
                 .catch(error => {
-                    console.error('There was a problem with the fetch operation:', error);
-                    log('There was a problem with the fetch operation:', error);
+                    console.error(error);
+                    //log('There was a problem with the fetch operation:', error);
                 });
         } else {
             alert("No module uid!, put one in")
@@ -353,7 +355,8 @@ function hack() {
                 log("cooking medals...")
             })
             .catch(error => {
-                log('There was a problem with the fetch operation:', error);
+                //log('There was a problem with the fetch operation:', error);
+                console.error(error);
             });
             for (i = 0; i < document.getElementById("medalAm").value; i++) {
                 var m = mods[c]
@@ -388,7 +391,7 @@ function hack() {
                     user.token = data.newToken
                 })
                 .catch(error => {
-                    log('There was a problem with the fetch operation:', error);
+                    console.error(error);
                 });
                 c++
             }
@@ -419,10 +422,12 @@ function hack() {
             })
             .then(data => {
                 user.token = data.newToken
-                log("You currently have " + data.goldMedals + " gold medals")
+                //log("You currently have " + data.goldMedals + " gold medals")
+                log("Successfully cooked medals, it may take a few seconds to show up")
             })
             .catch(error => {
-                log('There was a problem with the fetch operation:', error);
+                ////log('There was a problem with the fetch operation:', error);
+                console.error(error);
             });
         }else {
             alert("Specify how many medals you want (1-inf)")
@@ -470,7 +475,7 @@ function hack() {
                 completeHW(hwinfo)
             })
             .catch(error => {
-                log('There was a problem with the fetch operation:', error);
+                //log('There was a problem with the fetch operation:', error);
                 console.error(error)
             });
         }
@@ -513,7 +518,39 @@ function hack() {
                 var date = new Date(document.getElementById("datedown").value)
                 log(userid)
             })
-            .catch(error => log('Error fetching data:' + error));
+            .catch(error => {log('Error fetching data:' + error); console.error(error)});
+    }
+
+    if (checkboxes.printCurMedals.checked) {
+        fetch("https://api.languagenut.com/userDataController/getUserData?cacheBreaker=" + Date.now().toString() + "", {
+              "headers": {
+                "accept": "text/plain, */*; q=0.01",
+                "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+                "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
+                "sec-ch-ua": "\"Not A(Brand\";v=\"99\", \"Brave\";v=\"121\", \"Chromium\";v=\"121\"",
+                "sec-ch-ua-mobile": "?0",
+                "sec-ch-ua-platform": "\"Linux\"",
+                "sec-fetch-dest": "empty",
+                "sec-fetch-mode": "cors",
+                "sec-fetch-site": "same-site",
+                "sec-gpc": "1"
+              },
+              "referrer": "https://www.languagenut.com/",
+              "referrerPolicy": "strict-origin-when-cross-origin",
+              "body": "languagenutTimeMarker=" + Date.now().toString() + "&lastLanguagenutTimeMarker=" + Date.now().toString() + "&apiVersion=9&token=" + user.token,
+              "method": "POST",
+              "mode": "cors",
+              "credentials": "omit"
+            }).then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // Parse the response body as JSON
+            })
+            .then(data => {
+                user.token = data.newToken
+                log("You currently have " + data.goldMedals + " gold medals")
+            })
     }
     
 }
