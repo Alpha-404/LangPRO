@@ -5,6 +5,8 @@
 
 https://github.com/user-attachments/assets/b208576d-9639-423e-a30e-a91bd2d9428c
 
+--the end of an era, the hw bot is patched. i will probablly fix it but wont release the fix due to not wanting it to be patched.
+
 -- As of right now login is possibly broken on chrome, use firefox
 
 
